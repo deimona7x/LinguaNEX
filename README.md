@@ -60,6 +60,20 @@ npm run preview
 
 O preview do Vite usa `http://127.0.0.1:4173/` por padrão.
 
+## Deploy no GitHub Pages
+
+O repositório já está preparado para publicar no GitHub Pages via GitHub Actions.
+
+Depois do push:
+
+1. abra `Settings > Pages`
+2. em `Build and deployment`, selecione `GitHub Actions`
+3. aguarde o workflow `Deploy GitHub Pages` concluir
+
+URL esperada deste projeto:
+
+`https://deimona7x.github.io/LinguaNEX/`
+
 ## Estrutura principal
 
 - `src/data/languages.ts`: idiomas, unidades, lições e exercícios
