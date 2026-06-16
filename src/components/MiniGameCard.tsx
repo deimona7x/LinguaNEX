@@ -2,7 +2,7 @@ import { LucideIcon, Zap } from "lucide-react";
 import { Panel } from "./Panel";
 
 interface MiniGameCardProps {
-  title: string;
+  title: React.ReactNode;
   subtitle: string;
   icon: LucideIcon;
   xp: number;

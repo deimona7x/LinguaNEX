@@ -10,7 +10,18 @@ type ArcadeMode = "translation" | "listening" | "memory" | "draw" | "speed";
 
 const modeMap = {
   translation: { title: "Quiz de tradução", subtitle: "Escolha o significado correto.", icon: Languages, xp: 100 },
-  listening: { title: "Escuta/pronúncia", subtitle: "Ouça e identifique o item.", icon: Ear, xp: 120 },
+  listening: {
+    title: (
+      <>
+        Escuta/
+        <br />
+        pronúncia
+      </>
+    ),
+    subtitle: "Ouça e identifique o item.",
+    icon: Ear,
+    xp: 120
+  },
   memory: { title: "Memory match", subtitle: "Combine termo e significado.", icon: Grid2x2, xp: 100 },
   draw: { title: "Glyph draw", subtitle: "Tente desenhar o caractere.", icon: PenSquare, xp: 150 },
   speed: { title: "Speed run", subtitle: "Responda no limite do tempo.", icon: Timer, xp: 140 }
